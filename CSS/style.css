@@ -57,6 +57,51 @@ header  h1{
 }
 
 
+.result{
+    font-size: 40px;
+    color: white;
+}
+
+.result p{
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.choices{
+    text-align: center;
+    margin: 50px 0;
+}
+.choices .choice{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
