@@ -36,10 +36,9 @@ function  win(user ,  comp ){
 
   const  smallUserWord = "user".fontsize(3).sup() ;
   const  smallCompWord = "comp".fontsize(3).sup() ;
-
    result_p.innerHTML = `${converToward(user)}${smallUserWord} beats  ${converToward(comp)}${smallCompWord}. You  win`;
 
-
+ 
 
 }
 //function for   lose
