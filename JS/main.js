@@ -16,13 +16,36 @@ function  getCompChoice(){
     const  choices   = ['r', 'p', 's'];
      const  rendomNumber =  Math.floor(Math.random()*3);
      return  choices[rendomNumber];
-
-
 }
-console.log(getCompChoice());
+ 
+
 function  game(userChoice){
+
+    const  compChoice = getCompChoice();
+     switch(userChoice+compChoice){
+         case "rs":
+         case "pr":
+         case "sp":
+             console.log("USER WIN..");
+             break;
+         case "rp":
+         case "ps":
+         case "sr":
+             console.log("USER LOSES..");
+             break;
+        case "rr":
+        case "pp":
+        case "ss":
+             console.log("IT'S  A DRAW..");
+             break;
+         
+     }
+
+
+
      
 }
+ 
 
 function  main(){
     rock_div.addEventListener('click',  function(){
