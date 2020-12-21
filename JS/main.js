@@ -1,3 +1,4 @@
+//var  declaration
 const   userScore = 0;
 const   compScore = 0;
 
@@ -11,14 +12,35 @@ const   paper_div = document.getElementById("p");
 const   scissors_div = document.getElementById("s");
 
 
-
+//Computer random choice
 function  getCompChoice(){
     const  choices   = ['r', 'p', 's'];
      const  rendomNumber =  Math.floor(Math.random()*3);
      return  choices[rendomNumber];
 }
- 
 
+
+//function for   win
+function  win(){
+console.log("WIN");
+
+}
+//function for   lose
+
+ 
+function  lose(){
+    console.log("LOSE");
+
+}
+ 
+//function for   draw
+
+function  draw(){
+    console.log("DRAW");
+
+}
+ 
+//game  condition
 function  game(userChoice){
 
     const  compChoice = getCompChoice();
@@ -26,17 +48,17 @@ function  game(userChoice){
          case "rs":
          case "pr":
          case "sp":
-             console.log("USER WIN..");
+             win();
              break;
          case "rp":
          case "ps":
          case "sr":
-             console.log("USER LOSES..");
-             break;
+             lose();
+              break;
         case "rr":
         case "pp":
         case "ss":
-             console.log("IT'S  A DRAW..");
+            draw();
              break;
          
      }
@@ -46,7 +68,7 @@ function  game(userChoice){
      
 }
  
-
+//main  function or   click  event  function
 function  main(){
     rock_div.addEventListener('click',  function(){
         game("r") ;
